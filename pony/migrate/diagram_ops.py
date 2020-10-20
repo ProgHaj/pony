@@ -153,7 +153,8 @@ class ModifyRelation(Operation):
         op.reverse_name = reverse_name
         op.reverse_attr = reverse_attr
     def apply(op, db):
-        assert False, 'Not implemented'
+        print(f"Could not apply entity: {op.entity_name} using op_attr_name: {op.attr_name} with reverse_attr_name: {op.reverse_name} since it is not implemented")
+        # assert False, 'Not implemented'
         # entity = db.entities[op.entity_name]
         # attr = entity._adict_[op.attr_name]
         # attr._modify_relation_(op.new_name, _clone_attr(op.new_attr),
